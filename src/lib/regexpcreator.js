@@ -374,6 +374,8 @@ class RegExpCreator {
       case 'partially':
       default:
         return `()(${str})`;
+      case 'prefix':
+        return `(^|[ ])(${str})`;
       case 'complementary':
         lsJoin = '\\s' + (lsJoin ? lsJoin : this.escapeStr(chars));
         return `()([^${lsJoin}]*${str}[^${lsJoin}]*)`;
