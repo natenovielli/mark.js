@@ -1,10 +1,10 @@
 'use strict';
-describe('basic mark with accuracy partially', function() {
+describe('basic mark with accuracy prefix', function() {
   var $ctx;
   beforeEach(function(done) {
-    loadFixtures('basic/accuracy-partially.html');
+    loadFixtures('basic/accuracy-prefix.html');
 
-    $ctx = $('.basic-accuracy-partially');
+    $ctx = $('.basic-accuracy-prefix');
     new Mark($ctx[0]).mark('lorem', {
       'accuracy': 'prefix',
       'separateWordSearch': false,
