@@ -26,6 +26,8 @@ class RegExpCreator {
    *   <li><i>exactly</i>: When searching for "lor" only those exact words
    *   will be marked. In this example nothing inside "lorem". This value
    *   is equivalent to the previous option <i>wordBoundary</i></li>
+   *   <li><i>prefix</i>: When searching for "lor" only those instances of
+   *   lor that are a prefix of a word will be marked</li>
    * </ul>
    * Or an object containing two properties:
    * <ul>
